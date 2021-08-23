@@ -1,0 +1,86 @@
+
+.home{
+/*
+  display: flex;
+  position: relative;
+  justify-content: right;
+  font-family: 'Ubuntu', sans-serif;
+  */
+
+  &:after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background: $color1;
+    border: 1px solid $color3;
+    opacity: 60%;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: -10;
+    animation: contactAnim 25s alternate infinite;
+
+    @media screen and (max-width: 840px) {
+      height: 400px;
+      width: 400px;
+      top: 520px;
+      right: -140px;
+    }
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    @keyframes contactAnim {
+      50% {
+        transform: scale(1.4);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .text-home {
+    margin-top: 200px;
+
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: $color2;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: $color3;
+
+  }
+  .wd {
+    font-size: 2.3rem;
+    font-family: 'Poppins', sans-serif;
+    color: $color4;
+  }
+
+  .btn {
+    border-radius: 52px;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);  //background-color: $color1;
+    border: 1px solid #fff;
+  }
+
+  a:hover {
+    border-radius: 32px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #18dcff  ;
+    border: 1px solid #fff;
+    color: #081a32;
+  }
+
+
+
+}
+
+

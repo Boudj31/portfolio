@@ -1,0 +1,25 @@
+// color
+$color1: #010a1e;
+$color2: #dff2ff;
+$color3 : #18dcff;
+$color4 : #0e4478;
+
+// fonts
+
+@font-face {
+  font-family: "font-1";
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:ital,wght@1,100&display=swap');
+}
+
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", serif;
+
+
+
+

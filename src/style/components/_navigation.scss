@@ -1,0 +1,150 @@
+/*
+.navigation {
+  font-size: 1.2rem;
+  background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);  //background-color: $color1;
+  //border-bottom:  2px solid #DFF2FF;
+
+  .menu {
+    width: 100%;
+  }
+
+  .nav-active {
+    color: $color3;
+  }
+
+  .menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    li {
+      margin-right: 20px;
+    }
+    li img {
+      border-radius: 50%;
+      position: absolute;
+      left: 10px;
+    }
+  }
+}
+
+
+ li {
+   color: $color2;
+   list-style-type: none;
+   outline: none;
+   border: none;
+   text-decoration: none;
+ }
+
+ @media screen and (max-width: 600px){
+   .menu ul {
+     display: block;
+     flex-direction: row;
+   }
+ }
+
+ */
+.header {
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  height: 70px;
+  font-size: 1rem;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+}
+.nav-options {
+  padding-left: 45px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 30px;
+  list-style-type: none;
+}
+.mobile-option {
+  display: none;
+}
+
+.option :hover {
+  color: $color3;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 648px) {
+  /*Mobile View */
+  .header {
+    padding: 0px 10px;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-options {
+    display: flex;
+    width: 100%;
+    height: 305px;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options.active {
+    background: $color1;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .option {
+    display: flex;
+    border-bottom: 1px solid $color3;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+  .option :hover {
+    color: $color3;
+    text-decoration: none;
+  }
+
+}
+
+.mobile-menu {
+  display: block;
+}
+
+

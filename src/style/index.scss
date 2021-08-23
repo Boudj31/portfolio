@@ -1,0 +1,60 @@
+@import "setting";
+@import '~bootstrap/scss/bootstrap.scss';
+@import './components/mouse';
+@import './components/navigation';
+@import "components/about";
+@import "views/contact";
+@import "components/socialNetwork";
+@import "components/dynamicText";
+@import "views/home";
+@import "views/projects";
+@import "views/skills";
+
+
+
+
+// config
+
+*{
+  margin: 0;
+  padding: 0;
+
+  &::selection {
+    color: $color1;
+    background: $color2;
+  }
+}
+
+html {
+  scroll-behavior: unset;
+}
+a,
+a:visited {
+  color: white;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $color1;
+  color: $color2;
+  max-width: 100vw;
+  overflow: hidden;
+
+
+  @media screen and (max-width: 430px){
+    position: relative;
+    max-width: 100vw;
+    overflow-y: initial;
+  }
+}
+main {
+  position: relative;
+}
+
+.btn{
+  background-color: $color1;
+  border: 1px solid $color2;
+  color: $color2;
+}
+
+
+

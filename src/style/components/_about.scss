@@ -1,0 +1,199 @@
+* {
+  border: none;
+}
+.about {
+
+  padding: 0;
+  outline: none;
+  color: $color2;
+
+
+  &:after {
+    content: "";
+    height: 400px;
+    width: 600px;
+    background: $color1;
+    border: 2px solid $color3;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: -460px;
+    z-index: -10;
+    animation: contactAnim 25s alternate infinite;
+
+    @media screen and (max-width: 840px) {
+      height: 400px;
+      width: 400px;
+      top: 520px;
+      right: -140px;
+    }
+    @media screen and (max-width: 430px) {
+      display: none;
+    }
+
+    @keyframes contactAnim {
+      50% {
+        transform: scale(1.4);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  .navigation {
+    @media screen and (max-width: 440px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+  }
+
+
+  .about-box {
+    margin: 3rem auto 0;
+    max-width: 50%;
+    max-width: 1050px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid $color4;
+    border-radius: 32px;
+    background: black;
+    padding: 0 30px 10px;
+    box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.637);
+  }
+  .box-name {
+    border-radius: 32px;
+    background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);  //background-color: $color1;
+    border: 1px solid #fff;
+    margin-bottom: 26px
+  }
+
+
+  h2 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .form-content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) 105px;
+  }
+
+  input,
+  textarea {
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    border-bottom: 2px solid $color4;
+    color: $color2;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(190, 188, 188);
+  }
+
+  input,
+  .email-content,
+  textarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input {
+    padding: 24px 0 12px;
+  }
+
+  .email-content {
+    position: relative;
+  }
+
+  .email-content input {
+    width: 100%;
+  }
+
+  #not-mail {
+    display: none;
+    position: absolute;
+    top: 4px;
+    color: #ff4d4d;
+    right: 0;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes dongle {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    10% {
+      transform: translate(-10px, 0px);
+    }
+    20% {
+      transform: translate(10px, 0px);
+    }
+    30% {
+      transform: translate(-10px, 0px);
+    }
+    40% {
+      transform: translate(10px, 0px);
+    }
+    50% {
+      transform: translate(-10px, 0px);
+    }
+    60% {
+      transform: translate(10px, 0px);
+    }
+    70% {
+      transform: translate(-10px, 0px);
+    }
+    80% {
+      transform: translate(10px, 0px);
+    }
+    90% {
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  textarea {
+    resize: none;
+    padding: 24px 0;
+  }
+
+  .button {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: $color4;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    width: 100%;
+  }
+
+  .button:hover {
+    letter-spacing: 2px;
+  }
+
+  .error::placeholder {
+    color: #ff4d4d;
+  }
+
+  .form-message {
+    margin-top: 10px;
+    padding: 12px;
+    opacity: 0;
+    transition: 0.2s ease;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+  }
+  .avatar {
+    border: 2px solid $color3;
+    border-radius: 50%;
+  }
+}
