@@ -6,10 +6,10 @@ import {OverlayTrigger, Button, Popover} from "react-bootstrap";
 export default function Project({ projets }) {
     return(
 
-            <Carousel autoPlay interval={6000} infiniteLoop showThumbs>
+          <>
+              <Carousel autoPlay interval={6000} infiniteLoop showThumbs>
         {projets.map((projet) => {
             return(
-
                 <React.Fragment key={projet.id}>
                               <img className="card-img-top project-img" src={projet.img} alt="Card image cap" width="100%" />
                     {/* <OverlayTrigger
@@ -27,22 +27,40 @@ export default function Project({ projets }) {
                         <Button variant="secondary">Popover</Button>
                     </OverlayTrigger>
                     */ }
-                    <div className="overlay">
-                              <h5 className=" overlay-title text-center">{ projet.title }</h5>
-                               <p className=" overlay-infos text-center">{projet.infos}</p>
-                               <p className=" overlay-date text-center">{projet.date}</p>
-                               <p className=" overlay-lang text-center">{projet.languages.join("  ")}</p>
-                               <a href={projet.link} className={"overlay-link"}>{projet.link}</a>
-                           </div>
 
+                    <div className="overlay d-lg-block d-md-block d-none">
+                        <h5 className=" overlay-title text-center">{ projet.title }</h5>
+                        <p className=" overlay-infos text-center">{projet.infos}</p>
+                        <p className=" overlay-date text-center">{projet.date}</p>
+                        <p className=" overlay-lang text-center">{projet.languages.join("  ")}</p>
+                        <a href={projet.link} className={"overlay-link"}>{projet.link}</a>
+                    </div>
 
                 </React.Fragment>
 
-
             )
             })}
-                </Carousel>
+              </Carousel>
 
 
-    );
+              {projets.map((projet) => {
+                  return(
+                      <React.Fragment key={projet.id}>
+                          <div className="desc-btm d-lg-none d-md-none">
+                              <h5 className=" btm-title text-center">{ projet.title }</h5>
+                              <p className=" btm-infos text-center">{projet.infos}</p>
+                              <p className=" btm-date text-center">{projet.date}</p>
+                              <p className=" btm-lang text-center">{projet.languages.join("  ")}</p>
+                              <a href={projet.link} className={"btm-link"}>{projet.link}</a>
+                          </div>
+
+                      </React.Fragment>
+
+                  )
+              })}
+
+        </>
+
+
+        );
 }

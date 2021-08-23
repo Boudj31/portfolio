@@ -4,6 +4,7 @@ import SocialNetwork from "../components/SocialNetwork";
 import Project from "../components/Project";
 import Navtest from "../components/Navtest";
 import Modal from "../components/Modal";
+import DynamicText from "../components/DynamicText";
 
 export default function Projects() {
     const projectsData = [
@@ -65,6 +66,11 @@ export default function Projects() {
             <Navtest />
             <div className="container-lg">
                    <div className="row">
+                   <h1 className="text-center"> >Découvrez mes </h1>
+
+                   <div className="dynamic-text">
+                       <DynamicText />
+                   </div>
                    <Project projets={projectsData}/>
                    </div>
             </div>

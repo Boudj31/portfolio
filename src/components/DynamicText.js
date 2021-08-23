@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
+import TextyAnim from "rc-texty";
 
 const DynamicText = () => {
-    let array = ["Developer"];
+
+    const text = 'Réalisations';
+    /*
+        let array = ["Réalisations"];
     let wordIndex = 0;
     let letterIndex = 0;
 
@@ -37,17 +41,35 @@ const DynamicText = () => {
                     wordIndex++;
                     setTimeout(() => {
                         loop();
-                    }, 1000);
+                    }, 3000);
                 }
-            }, 80);
+            }, 200);
         };
         loop();
     }, []);
-
+    */
     return (
-        <span className="dynamic-text">
-      <span id="text-target"></span>
-    </span>
+        <TextyAnim
+            type="mask-top"
+            duration={(e) => {
+                if (e.index === 2) {
+                    return 1000;
+                }
+                return 2000;
+            }}
+            interval={(e) => {
+                if (e.index === 2) {
+                    return 1000;
+                }
+                return e.index * 100;
+            }}
+            onEnd={(type) => {
+                // tslint:disable-next-line
+                console.log(type);
+            }}
+        >
+            {text}
+        </TextyAnim>
     );
 };
 

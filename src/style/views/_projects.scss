@@ -38,6 +38,10 @@
 
 }
 
+.carousel .overlay-sm {
+  display: none;
+}
+
 .projet-img{
   border: 5px solid $color4;
 }
@@ -78,9 +82,41 @@
   color: white;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 840px){
   .carousel .slide img {
     width: 100%;
     object-fit: cover;
   }
+  .desc-btm {
+    width: 100%;
+    padding: 0.4rem;
+    text-align: center;
+    border: 2px solid $color4;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #DFF2FF;
+  }
+
+  .btm-title {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+  }
+
+  .btm-infos {
+    font-size: 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+  }
+  .btm-lang {
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: $color3;
+  }
+  .btm-link {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+  }
+
 }

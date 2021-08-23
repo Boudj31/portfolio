@@ -1,44 +1,7 @@
 .dynamic-text {
-  position: relative;
-  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.4rem;color: $color3;
+  margin-left: 20px;
 
-  .simply {
-    color: $color4;
-  }
 
-  #text-target {
-    display: flex;
-    width: 300px;
-    text-align: left;
-    animation: color 30s alternate infinite;
-    perspective: 200px;
-    transform: translateX(26px);
-  }
-  .word {
-    position: absolute;
-  }
-  @keyframes color {
-    0% {
-      color: $color2;
-    }
-    50% {
-      color: $color3;
-    }
-    100% {
-      color: $color1;
-    }
-  }
-  .letter {
-    transform: translateZ(200px);
-  }
-  @keyframes anim {
-    25% {
-      transform: translateZ(0px);
-      opacity: 1;
-    }
-    32% {
-      opacity: 0;
-      transform: translateZ(-280px) translateX(200px);
-    }
-  }
 }
