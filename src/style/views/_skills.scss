@@ -48,6 +48,9 @@
     background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);  //background-color: $color1;
     border: 1px solid #fff;
   }
+  img {
+    object-fit: contain;
+  }
 
   .skills-group {
     border-bottom: 1px solid $color4;

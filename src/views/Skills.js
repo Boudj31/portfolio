@@ -3,6 +3,9 @@ import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import SkillsData from "../components/SkillsData";
 import Navtest from "../components/Navtest";
+import {motion} from "framer-motion";
+import DynamicText from "../components/DynamicText";
+import ScrollButtons from "../components/ScrollButtons";
 
 
 export default function Skills() {
@@ -112,26 +115,37 @@ export default function Skills() {
             <Mouse />
             <Navtest />
             <div className=" container main-sk mt-3">
+                <h2 className="text-center"> >Voila ce que je sais faire </h2>
                 <div className="row">
-                    <div className="col-lg-3 col-md-6 col-sm-10 skills-box justify-content-center">
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2">Developement()</h4>
+                            <h4 className="text-center p-2">>Dévelopement</h4>
                         </div>
                         <SkillsData datas={skills} />
-                    </div>
-                    <div className="col-lg-3 col-sm-6 col-10 skills-box justify-content-center">
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="col-lg-3 col-sm-6 col-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2">Design</h4>
+                            <h4 className="text-center p-2">>Design</h4>
                         </div>
                         <SkillsData datas={design} />
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-sm-10 skills-box justify-content-center">
+                    </motion.div>
+                    <motion.div
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2">Softs Skills</h4>
+                            <h4 className="text-center p-2">>Softs Skills</h4>
                         </div>
                         <SkillsData datas={soft} />
-                    </div>
+                    </motion.div>
                 </div>
+                <ScrollButtons right={"/projets"} left={"/about"}/>
             </div>
         </>
     );

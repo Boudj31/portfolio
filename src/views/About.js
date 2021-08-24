@@ -1,9 +1,8 @@
 import React from 'react'
 import Mouse from "../components/Mouse";
-import Navigation from "../components/Navigation";
-import SocialNetwork from "../components/SocialNetwork";
 import AboutComponent from "../components/AboutComponent";
 import Navtest from "../components/Navtest";
+import ScrollButtons from "../components/ScrollButtons";
 
 export default function About() {
     return (
@@ -12,6 +11,7 @@ export default function About() {
             <Navtest />
             <div className="container mt-3">
                 <AboutComponent />
+                <ScrollButtons right={"/contact"} left={"/skills"}/>
             </div>
         </>
     );

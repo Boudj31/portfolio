@@ -5,6 +5,7 @@ import Project from "../components/Project";
 import Navtest from "../components/Navtest";
 import Modal from "../components/Modal";
 import DynamicText from "../components/DynamicText";
+import ScrollButtons from "../components/ScrollButtons";
 
 export default function Projects() {
     const projectsData = [
@@ -59,6 +60,16 @@ export default function Projects() {
             img: "./img/projet/port.png",
             link: "http://www.rachidboudjenane.fr",
         },
+        {
+            id: 5,
+            title: "Nitehop V1",
+            date: "Septembre 2019",
+            languages: ["Swift",'Firebase'],
+            infos:
+                "Nitehop est l'application tout en un qui simplifie la vie à tous ceux et celles qui rêvent de passer des moments fun en soirée.",
+            img: "./img/projet/nite.png",
+            link: "http://www.nitehop.fr",
+        },
     ];
     return (
         <>
@@ -66,13 +77,14 @@ export default function Projects() {
             <Navtest />
             <div className="container-lg">
                    <div className="row">
-                   <h1 className="text-center"> >Découvrez mes </h1>
+                   <h2 className="text-center"> >Découvrez mes </h2>
 
                    <div className="dynamic-text">
                        <DynamicText />
                    </div>
                    <Project projets={projectsData}/>
                    </div>
+                <ScrollButtons right={"/skills"} left={"/"}/>
             </div>
         </>
     );

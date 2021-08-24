@@ -1,9 +1,8 @@
 import React, {Fragment} from 'react'
 import Mouse from "../components/Mouse";
-import SocialNetwork from "../components/SocialNetwork";
-import DynamicText from "../components/DynamicText";
 import Navtest from "../components/Navtest";
 import {motion} from "framer-motion";
+import ScrollButtons from "../components/ScrollButtons";
 
 
 export default function Home() {
@@ -33,7 +32,7 @@ export default function Home() {
                 </div>
 
             </div>
-            <SocialNetwork />
+            <ScrollButtons right={"/projets"}/>
 
         </Fragment>
     );
