@@ -3,7 +3,12 @@ import React, {Component, useState} from "react";
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import { ReactComponent as Logo } from "../assets/logo.svg";
+import {ThemeProvider} from "styled-components";
 import {NavLink} from "react-router-dom";
+import Toggle from "./Toogler";
+import {useDarkMode} from "./useDarkMode";
+import {darkTheme, lightTheme} from "./Themes";
+import {GlobalStyles} from "./GlobalStyles";
 
 
 const Navtest =() => {
@@ -11,10 +16,19 @@ const Navtest =() => {
         const [click, setClick] = useState(false);
         const handleClick = () => setClick(!click);
         const closeMobileMenu = () => setClick(false);
+        const [theme, themeToggler, mountedComponent] = useDarkMode();
+        const themeMode = theme === 'light' ? lightTheme: darkTheme;
+
+        if(!mountedComponent) return <div/>
+
+
 
         return (
+            <ThemeProvider theme={themeMode}>
+            <GlobalStyles />
             <div className="header">
                 <div className="logo-nav">
+                    <Toggle theme={theme} toggleTheme={themeToggler} />
                     <ul className={click ? "nav-options active" : "nav-options"}>
                         <li className="option" onClick={closeMobileMenu}>
                             <NavLink to="/" exact className="hover " activeClassName="nav-active">
@@ -53,6 +67,7 @@ const Navtest =() => {
                     )}
                 </div>
             </div>
+            </ThemeProvider>
         )
 }
 

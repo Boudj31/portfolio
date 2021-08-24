@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {Switch, Route, useLocation, useHistory, BrowserRouter,} from "react-router-dom";
 import NotFound from "./views/NotFound";
 import Home from "./views/Home";
@@ -6,9 +6,17 @@ import Contact from "./views/Contact";
 import About from "./views/About";
 import Projects from "./views/Projects";
 import Skills from "./views/Skills";
+
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
+    //theme
+  //  const [theme, themeToggler, mountedComponent] = useDarkMode();
+  //  const themeMode = theme === 'light' ? lightTheme: darkTheme;
+
+
+
+    //scroll
     const location = useLocation();
     let history = useHistory();
 
@@ -60,7 +68,10 @@ function App() {
         window.addEventListener("wheel", handleScrollToElement);
     }, [history]);
 
+    //if(!mountedComponent) return <div/>
+
     return (
+
         <AnimatePresence>
           <Switch>
             <Route exact path="/" component={Home} />
@@ -71,6 +82,7 @@ function App() {
             <Route path="*" component={NotFound} />
             </Switch>
         </AnimatePresence>
+
 
   );
 }
