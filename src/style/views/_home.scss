@@ -26,9 +26,11 @@
       width: 400px;
       top: 520px;
       right: -140px;
+      overflow: unset;
     }
     @media screen and (max-width: 430px) {
       display: none;
+      overflow: unset;
     }
 
     @keyframes contactAnim {

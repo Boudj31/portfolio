@@ -3,7 +3,6 @@ import Mouse from "../components/Mouse";
 import SocialNetwork from "../components/SocialNetwork";
 import Project from "../components/Project";
 import Navtest from "../components/Navtest";
-import Modal from "../components/Modal";
 import DynamicText from "../components/DynamicText";
 import ScrollButtons from "../components/ScrollButtons";
 
@@ -11,7 +10,7 @@ export default function Projects() {
     const projectsData = [
         {
             id: 1,
-            title: "SVP-Visio",
+            title: "Svp-Visio",
             date: "Avril 2021",
             languages: ["Wordpress"],
             infos:
@@ -84,8 +83,8 @@ export default function Projects() {
                    </div>
                    <Project projets={projectsData}/>
                    </div>
-                <ScrollButtons right={"/skills"} left={"/"}/>
             </div>
+            <ScrollButtons right={"/skills"} left={"/"}/>
         </>
     );
 

@@ -145,7 +145,7 @@ export default function Skills() {
                         <SkillsData datas={soft} />
                     </motion.div>
                 </div>
-                <ScrollButtons right={"/projets"} left={"/about"}/>
+                <ScrollButtons right={"/about"} left={"/projets"}/>
             </div>
         </>
     );
