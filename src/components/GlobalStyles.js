@@ -143,6 +143,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   // portfolio
+
+  .dynamic-text{
+    color: ${({theme}) => theme.after};
+  }
   .carousel .overlay {
     background-color: ${({theme}) => theme.skills};
     color: ${({theme}) => theme.text};
