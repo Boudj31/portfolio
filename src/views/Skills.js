@@ -131,7 +131,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-sm-6 col-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2">>Design</h4>
+                            <h4 className="text-center p-2"> >Design  </h4>
                         </div>
                         <SkillsData datas={design} />
                     </motion.div>
@@ -140,7 +140,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2">>Softs Skills</h4>
+                            <h4 className="text-center p-2"> >Softs Skills </h4>
                         </div>
                         <SkillsData datas={soft} />
                     </motion.div>
