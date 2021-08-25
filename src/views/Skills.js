@@ -115,7 +115,6 @@ export default function Skills() {
             <Mouse />
             <Navtest />
             <div className=" container main-sk mt-3">
-                <h2 className="text-center"> >Voila ce que je sais faire </h2>
                 <div className="row justify-content-between">
                     <motion.div
                         whileHover={{ scale: 1.1 }}

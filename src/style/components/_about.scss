@@ -45,6 +45,10 @@
     border-radius: 30px;
     width: 300px;
     height: 500px;
+
+    @media screen and (max-width: 630px){
+      height: 300px
+    }
   }
 
   .big-box ,.small-box{
@@ -58,6 +62,7 @@
 
   h5, h3{
     color: $color3;
+    border-bottom: 1px solid $color3;
   }
   li{
     text-decoration: none;
@@ -71,7 +76,6 @@
   }
   p ,li{
     font-size: 1.2rem;
-    text-align: center;
   }
 
 }

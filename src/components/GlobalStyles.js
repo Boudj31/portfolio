@@ -172,31 +172,25 @@ export const GlobalStyles = createGlobalStyle`
     color: $color3;
   }
 
-  // about 
-  * {
-    border: none;
-  }
-
+  // about
   .about {
-
-    padding: 0;
-    outline: none;
-    color: $color2;
-
-
     &:after {
       background: ${({theme}) => theme.body};
       border: 2px solid ${({theme}) => theme.after};
     }
-
-    .about-box {
-      color: ${({theme}) => theme.text};
-      background: ${({theme}) => theme.contactpage};
-    }
-
-    .box-name {
-      background: ${({theme}) => theme.btnsk};
-    }
-
+  .big-box ,.small-box{
+    color: ${({theme}) => theme.text};
+    background: ${({theme}) => theme.contactpage};
   }
+
+  h5, h3{
+    color: ${({theme}) => theme.after};
+    border-bottom: 1px solid ${({theme}) => theme.after};
+  }
+  
+  svg {
+    color ${({theme}) => theme.text};
+  }
+ 
+  
 `
