@@ -26,9 +26,11 @@ const Navtest =() => {
         return (
             <ThemeProvider theme={themeMode}>
             <GlobalStyles />
-            <div className="header">
+            <nav className="header">
                 <div className="logo-nav">
-                    <Toggle theme={theme} toggleTheme={themeToggler} />
+                    <div className="mr-2">
+                        <Toggle theme={theme} toggleTheme={themeToggler} />
+                    </div>
                     <ul className={click ? "nav-options active" : "nav-options"}>
                         <li className="option" onClick={closeMobileMenu}>
                             <NavLink to="/" exact className="hover " activeClassName="nav-active">
@@ -66,7 +68,7 @@ const Navtest =() => {
                         <MenuIcon className="menu-icon" />
                     )}
                 </div>
-            </div>
+            </nav>
             </ThemeProvider>
         )
 }

@@ -3,9 +3,10 @@ import { func, string } from 'prop-types';
 import styled from "styled-components"
 
 const Button = styled.button`
-  background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);
-  border: 2px solid #010a1e;
-   color: white;
+  //background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);
+  background: ${({ theme }) => theme.background};
+ // border: 2px solid #010a1e;
+  color: ${({ theme }) => theme.text};
   border-radius: 30px;
   cursor: pointer;
   font-size:0.8rem;
