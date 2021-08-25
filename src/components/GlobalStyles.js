@@ -99,6 +99,7 @@ export const GlobalStyles = createGlobalStyle`
 
     .contact-form {
       background: ${({theme}) => theme.contactpage};
+      border: 2px solid ${({theme}) => theme.skills};
     }
 
     input,
@@ -178,19 +179,33 @@ export const GlobalStyles = createGlobalStyle`
       background: ${({theme}) => theme.body};
       border: 2px solid ${({theme}) => theme.after};
     }
-  .big-box ,.small-box{
-    color: ${({theme}) => theme.text};
-    background: ${({theme}) => theme.contactpage};
-  }
 
-  h5, h3{
-    color: ${({theme}) => theme.after};
-    border-bottom: 1px solid ${({theme}) => theme.after};
-  }
-  
-  svg {
-    color ${({theme}) => theme.text};
-  }
- 
+    .big-box, .small-box {
+      color: ${({theme}) => theme.text};
+      background: ${({theme}) => theme.contactpage};
+    }
+
+    h5, h3 {
+      color: ${({theme}) => theme.after};
+      border-bottom: 1px solid ${({theme}) => theme.after};
+    }
+
+    svg {
+      color ${({theme}) => theme.text};
+    }
+
+    svg:hover {
+      color ${({theme}) => theme.after};
+    }
+
+    a:hover {
+      color: ${({theme}) => theme.after};
+    }
+    
+    span{
+      color ${({theme}) => theme.after};
+    }
+
+  } 
   
 `
