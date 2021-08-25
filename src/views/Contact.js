@@ -3,6 +3,7 @@ import Mouse from '../components/Mouse'
 import ContactForm from '../components/ContactForm'
 import Navtest from "../components/Navtest";
 import ScrollButtons from "../components/ScrollButtons";
+import {motion} from "framer-motion";
 
 
 export default class Contact extends Component {
@@ -12,7 +13,8 @@ export default class Contact extends Component {
             <main>
                 <Mouse />
                 <Navtest />
-                <div className="contact">
+                <div
+                    className="contact">
                     <ContactForm />
                 </div>
             </main>

@@ -3,7 +3,7 @@ export const lightTheme = {
     text: '#010a1e',
     toggleBorder: '#FFF',
     background: '#FAFAFA',
-    navColor: 'linear-gradient(to bottom, #010a1e, #0e4478, #b1daf8, #dff2ff)',
+    navColor: 'linear-gradient(rgb(177 218 248 / 56%), rgb(177 218 248 / 41%), rgb(177, 218, 248), rgb(223, 242, 255))',
     after: '#0e4478',
 
     // home page
@@ -17,7 +17,7 @@ export const lightTheme = {
 
 
     // compétences
-    skills: 'rgb(177, 218, 248, 0.4)',
+    skills: 'rgb(177, 218, 248, 0.6)',
     btnsk: 'linear-gradient(to bottom, #0e4478, #b1daf8, #dff2ff, #dff2ff, #FFF)',
 
 
