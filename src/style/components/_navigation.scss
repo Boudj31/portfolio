@@ -73,6 +73,10 @@
   width: 45px;
   height: 45px;
 }
+
+.toogle {
+  margin-bottom: 10px;
+}
 .nav-options {
   padding-left: 45px;
   display: grid;
@@ -131,6 +135,7 @@
     width: 45px;
     height: 45px;
   }
+
   .option {
     display: flex;
     border-bottom: 1px solid $color3;

@@ -4,9 +4,9 @@ import styled from "styled-components"
 
 const Button = styled.button`
   //background-image: linear-gradient(to bottom, #0e4478, #0e3560, #0c2748, #081a32, #010a1e);
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.text};
  // border: 2px solid #010a1e;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.background};
   border-radius: 30px;
   cursor: pointer;
   font-size:0.8rem;

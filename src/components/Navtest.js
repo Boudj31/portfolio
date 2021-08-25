@@ -28,7 +28,7 @@ const Navtest =() => {
             <GlobalStyles />
             <nav className="header">
                 <div className="logo-nav">
-                    <div className="mr-2">
+                    <div className="mr-2 toogle">
                         <Toggle theme={theme} toggleTheme={themeToggler} />
                     </div>
                     <ul className={click ? "nav-options active" : "nav-options"}>

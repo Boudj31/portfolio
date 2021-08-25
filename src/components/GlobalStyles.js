@@ -10,6 +10,10 @@ export const GlobalStyles = createGlobalStyle`
 
   .cursor {
     border: 3px solid ${({theme}) => theme.after};
+
+    &:hover {
+      color: ${({theme}) => theme.after};
+    }
   }
 
   // header 
@@ -17,12 +21,12 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({theme}) => theme.navColor};
     //color: ${({theme}) => theme.text};
     
-    //  .option :hover {
-    //    color: $color3;
-    //  }
+      }
     //  .nav-active {
     //    color: $color3;
     //  }
+  .option :hover {
+    color: ${({theme}) => theme.after};
   }
   a, a:visited {
     color: inherit;
@@ -45,7 +49,6 @@ export const GlobalStyles = createGlobalStyle`
 
     .option :hover {
       color: ${({theme}) => theme.after};
-      text-decoration: none;
     }
 
   }
