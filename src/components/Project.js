@@ -12,7 +12,8 @@ export default function Project({ projets }) {
                   options={ {
                       rewind : true,
                       perPage: 2,
-                      width  : '100%',
+                      width  : '95%',
+                      height: 500,
                       gap: '2rem',
                       breakpoints: {
                           730: {
@@ -25,8 +26,8 @@ export default function Project({ projets }) {
                           <React.Fragment key={projet.id}>
                               <SplideSlide>
                               <motion.div
-                                  className="overlay">
-                                  <img className="card-img-top project-img" src={projet.img} alt="Card image cap" width="100%" />
+                                  className="overlay justify-content-center">
+                                  <img className="project-img" src={projet.img} alt="Card image cap" width="100%" />
                                   <h5 className=" overlay-title text-center">{ projet.title }</h5>
                                   <p className=" overlay-infos text-center">{projet.infos}</p>
                                   <p className=" overlay-lang text-center">{projet.languages.join(", ")}</p>

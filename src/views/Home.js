@@ -31,9 +31,11 @@ export default function Home() {
                             </motion.button>
                         </a>
                     </div>
-                        <div className="col-lg-5 img-home">
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}className="col-lg-5 img-home">
                             <img src="img/mac.svg" alt="mac"/>
-                        </div>
+                        </motion.div>
 
                 </div>
 
