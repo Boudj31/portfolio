@@ -41,12 +41,25 @@
 
   }
 
+  img{
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: auto;
+    object-fit: contain;
+
+  }
+
   h1 {
     font-family: 'Poppins',sans-serif;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3.3rem;
     line-height: 82px;
     color: $color2;
+  }
+
+  h1 span {
+    font-size: 4.2rem;
   }
 
   h2 {
@@ -90,7 +103,7 @@
      // display: none;
     }
     h1 {
-       font-size: 3.6rem;
+       font-size: 3.1rem;
     }
 
   }

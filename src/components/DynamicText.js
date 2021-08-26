@@ -3,7 +3,7 @@ import TextyAnim from "rc-texty";
 
 const DynamicText = () => {
 
-    const text = 'Réalisations';
+    const text = 'Développeur FullStack';
 
     return (
         <TextyAnim

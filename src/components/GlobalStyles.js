@@ -73,7 +73,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .home img {
-    filter: drop-shadow(0 0 1.2rem ${({theme}) => theme.text});
+  //  filter: drop-shadow(0 0 1.2rem ${({theme}) => theme.text});
 
   }
 
