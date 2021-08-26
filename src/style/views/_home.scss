@@ -45,7 +45,7 @@
   h1 {
     font-family: 'Poppins',sans-serif;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 4rem;
     line-height: 82px;
     color: $color2;
   }
@@ -53,7 +53,7 @@
   h2 {
     font-family: 'Poppins',sans-serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 2rem;
     line-height: 82px;
     color: $color3;
 
@@ -61,7 +61,7 @@
   .wd {
     font-family: 'Poppins',sans-serif;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 2rem;
     line-height: 82px;
     color: $color4;
   }
@@ -90,6 +90,10 @@
       max-width: 300px;
      // display: none;
     }
+    h1 {
+       font-size: 3.6rem;
+    }
+
   }
 
 

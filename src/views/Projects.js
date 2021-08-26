@@ -44,7 +44,7 @@ export default function Projects() {
             date: "Juillet 2020",
             languages: ["Symfony", "HTML/CSS", "Sass"],
             infos:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+                "Lorem",
             img: "./img/projet/online.png",
             link: "http://www.google.com",
         },
@@ -75,7 +75,16 @@ export default function Projects() {
             <Mouse />
             <Navtest />
             <div className="container-lg">
-                   <div className="row">
+                <div className="row mb-3 justify-content-center">
+                    <h2 className="text-center"> >Découvrez mes </h2>
+
+                    <div className="dynamic-text text-center">
+                        <DynamicText />
+                    </div>
+                </div>
+                <Project projets={projectsData}/>
+                {/*
+                <div className="row">
                    <h2 className="text-center"> >Découvrez mes </h2>
 
                    <div className="dynamic-text">
@@ -83,6 +92,7 @@ export default function Projects() {
                    </div>
                    <Project projets={projectsData}/>
                    </div>
+                */}
             </div>
             <ScrollButtons right={"/skills"} left={"/"}/>
         </>

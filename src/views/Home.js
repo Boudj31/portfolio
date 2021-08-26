@@ -20,8 +20,8 @@ export default function Home() {
                             <motion.button
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
-                                className="btn">
-                                >downloadCV
+                                className="btn pr-3 pl-3">
+                                Mon CV
                             </motion.button>
                         </a>
                     </div>

@@ -148,8 +148,8 @@ export const GlobalStyles = createGlobalStyle`
   .dynamic-text{
     color: ${({theme}) => theme.after};
   }
-  .carousel .overlay {
-    background-color: ${({theme}) => theme.skills};
+  .overlay {
+    background: ${({theme}) => theme.contactpage};;
     color: ${({theme}) => theme.text};
   }
 
@@ -164,15 +164,12 @@ export const GlobalStyles = createGlobalStyle`
   .overlay-lang {
     color: ${({theme}) => theme.placeholder};
   }
-
-  .overlay-link {
-    color: $color2;
-  }
-
   .overlay-link:hover {
-    color: $color3;
+    color: ${({theme}) => theme.after};
   }
-
+  a, a:visited {
+    color: inherit;
+  }
   // about
   .about {
     &:after {
