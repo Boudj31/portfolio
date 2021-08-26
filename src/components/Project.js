@@ -6,19 +6,14 @@ import { Carousel } from 'react-responsive-carousel';
 import {motion, AnimatePresence, AnimateSharedLayout} from "framer-motion";
 
 export default function Project({ projets }) {
-    const [selectedId, setSelectedId] = useState(null)
-
     return(
-
           <>
-
-
               <Splide
                   options={ {
                       rewind : true,
                       perPage: 2,
                       width  : '100%',
-                      gap    : '2rem',
+                      gap: '2rem',
                       breakpoints: {
                           730: {
                               perPage: 1,
@@ -42,10 +37,6 @@ export default function Project({ projets }) {
                               )
                   })}
               </Splide>
-
-
         </>
-
-
         );
 }

@@ -73,7 +73,7 @@ export default function Projects() {
             <Mouse />
             <Navtest />
             <div className="container-lg">
-                <div className="row mb-3 justify-content-center align-baseline">
+                <div className="row mb-3 justify-content-center align-baseline box-title">
                     <h2 className="text-center"> >Découvrez mes Réalisations</h2>
                 </div>
                 <Project projets={projectsData}/>

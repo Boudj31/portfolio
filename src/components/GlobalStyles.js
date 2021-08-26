@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.text};
     transition: all 0.50s linear;
   }
-
+  
   // mouse
 
   .cursor {
@@ -130,6 +130,10 @@ export const GlobalStyles = createGlobalStyle`
     .box-name {
       background: ${({theme}) => theme.btnsk};
     }
+    .box-title{
+      background: ${({theme}) => theme.contactpage};;
+      color: ${({theme}) => theme.text};
+    }
 
   }
 
@@ -169,6 +173,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   a, a:visited {
     color: inherit;
+  }
+  .box-title{
+    background: ${({theme}) => theme.contactpage};;
+    color: ${({theme}) => theme.text};
   }
   // about
   .about {
