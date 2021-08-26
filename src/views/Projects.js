@@ -1,9 +1,7 @@
 import React from 'react'
 import Mouse from "../components/Mouse";
-import SocialNetwork from "../components/SocialNetwork";
 import Project from "../components/Project";
 import Navtest from "../components/Navtest";
-import DynamicText from "../components/DynamicText";
 import ScrollButtons from "../components/ScrollButtons";
 
 export default function Projects() {
@@ -14,7 +12,7 @@ export default function Projects() {
             date: "Avril 2021",
             languages: ["Wordpress"],
             infos:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+                "Site Wordpress de screencasts ",
             img: "./img/projet/svp.png",
             link: "http://www.svp-visio.fr",
         },
@@ -24,7 +22,7 @@ export default function Projects() {
             date: "Decembre 2020",
             languages: ["Symfony", "HTML/CSS", "Sass"],
             infos:
-                "Progiciel de gestion de stock pour faciliter le traitement d'une association Naga44 qui récupere des ordinateurs pour leur adhérents.",
+                "Progiciel de gestion de stock.",
             img: "./img/projet/naga.png",
             link: "http://www.nagastock.com",
         },
@@ -34,7 +32,7 @@ export default function Projects() {
             date: "Avril 2020",
             languages: ["Vue", "HTML/CSS", "Symfony"],
             infos:
-                "Site d'annonces ",
+                "Site d'annonces pour la gestion de déchets.",
             img: "./img/projet/wasted.png",
             link: "http://www.nagastock.fr",
         },
@@ -44,7 +42,7 @@ export default function Projects() {
             date: "Juillet 2020",
             languages: ["Symfony", "HTML/CSS", "Sass"],
             infos:
-                "Lorem",
+                "Site E-learning sur Symfony",
             img: "./img/projet/online.png",
             link: "http://www.google.com",
         },
@@ -55,7 +53,7 @@ export default function Projects() {
             date: "Septembre 2021",
             languages: ["HTML/CSS",'ReactJS'],
             infos:
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
+                "Portfolio de Boudjenane Rachid",
             img: "./img/projet/port.png",
             link: "http://www.rachidboudjenane.fr",
         },
@@ -65,7 +63,7 @@ export default function Projects() {
             date: "Septembre 2019",
             languages: ["Swift",'Firebase'],
             infos:
-                "Nitehop est l'application tout en un qui simplifie la vie à tous ceux et celles qui rêvent de passer des moments fun en soirée.",
+                "Application IOS pour le monde de la nuit.",
             img: "./img/projet/nite.png",
             link: "http://www.nitehop.fr",
         },
@@ -75,24 +73,10 @@ export default function Projects() {
             <Mouse />
             <Navtest />
             <div className="container-lg">
-                <div className="row mb-3 justify-content-center">
-                    <h2 className="text-center"> >Découvrez mes </h2>
-
-                    <div className="dynamic-text text-center">
-                        <DynamicText />
-                    </div>
+                <div className="row mb-3 justify-content-center align-baseline">
+                    <h2 className="text-center"> >Découvrez mes Réalisations</h2>
                 </div>
                 <Project projets={projectsData}/>
-                {/*
-                <div className="row">
-                   <h2 className="text-center"> >Découvrez mes </h2>
-
-                   <div className="dynamic-text">
-                       <DynamicText />
-                   </div>
-                   <Project projets={projectsData}/>
-                   </div>
-                */}
             </div>
             <ScrollButtons right={"/skills"} left={"/"}/>
         </>

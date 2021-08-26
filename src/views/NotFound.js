@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Mouse from '../components/Mouse'
-import Navigation from '../components/Navigation'
 import Navtest from "../components/Navtest";
 
 export default class NotFound extends Component {

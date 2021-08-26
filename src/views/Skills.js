@@ -1,10 +1,8 @@
 import React from 'react'
 import Mouse from "../components/Mouse";
-import Navigation from "../components/Navigation";
 import SkillsData from "../components/SkillsData";
 import Navtest from "../components/Navtest";
 import {motion} from "framer-motion";
-import DynamicText from "../components/DynamicText";
 import ScrollButtons from "../components/ScrollButtons";
 
 

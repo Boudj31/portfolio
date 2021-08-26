@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import {Switch, Route, useLocation, useHistory, BrowserRouter,} from "react-router-dom";
+import React, { useEffect } from "react";
+import {Switch, Route, useLocation, useHistory} from "react-router-dom";
 import NotFound from "./views/NotFound";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
@@ -10,11 +10,6 @@ import Skills from "./views/Skills";
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-    //theme
-  //  const [theme, themeToggler, mountedComponent] = useDarkMode();
-  //  const themeMode = theme === 'light' ? lightTheme: darkTheme;
-
-
 
     //scroll
     const location = useLocation();
@@ -68,7 +63,6 @@ function App() {
         window.addEventListener("wheel", handleScrollToElement);
     }, [history]);
 
-    //if(!mountedComponent) return <div/>
 
     return (
 
