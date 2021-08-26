@@ -1,11 +1,5 @@
 
 .home{
-/*
-  display: flex;
-  position: relative;
-  justify-content: right;
-  font-family: 'Ubuntu', sans-serif;
-  */
 
   &:after {
     content: "";
@@ -44,25 +38,31 @@
   }
 
   .text-home {
-    margin-top: 200px;
+    margin-top: 150px;
 
   }
 
   h1 {
-    font-size: 3.2rem;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 82px;
     color: $color2;
   }
 
   h2 {
-    font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 82px;
     color: $color3;
 
   }
   .wd {
-    font-size: 2.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 82px;
     color: $color4;
   }
 

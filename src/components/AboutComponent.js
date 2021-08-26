@@ -55,7 +55,7 @@ const AboutComponent = () => {
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             className="col-lg-3 col-md-12 text-center">
-                            <img src="img/rch.jpeg" alt="photo de moi" className="avatar" />
+                            <img src="img/rch.jpg" alt="photo de moi" className="avatar" />
                         </motion.div>
                         <div className="col-lg-8 col-md-12">
                             <motion.div

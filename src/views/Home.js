@@ -13,7 +13,7 @@ export default function Home() {
             <div className="home container">
                 <div className="row">
                     <div className="col-lg-8 col-sm-12 text-home">
-                        <h1>>I am BOUDJENANE Rachid</h1>
+                        <h1>I am <br/>BOUDJENANE Rachid</h1>
                         <h2> Développeur Fullstack</h2>
                         <h2 className="wd"> Designer Web</h2>
                         <a href="cv/CV.pdf" download="CV">
