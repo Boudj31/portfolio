@@ -10,15 +10,15 @@ export default class Contact extends Component {
     render() {
         return (
             <>
-            <main>
-                <Mouse />
-                <Navtest />
-                <div
-                    className="contact">
-                    <ContactForm />
-                </div>
-            </main>
-                <ScrollButtons left={"/about"} />
+                <main role="main">
+                    <Mouse/>
+                    <Navtest/>
+                    <div
+                        className="contact">
+                        <ContactForm/>
+                    </div>
+                </main>
+                <ScrollButtons left={"/about"}/>
             </>
         )
     }

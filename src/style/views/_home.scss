@@ -41,12 +41,14 @@
 
   }
 
-  img{
+  .img-home{
     width: 600px;
     margin-top: 100px;
     margin-left: 100px;
+   // background-size: cover;
     height: auto;
-    object-fit: contain;
+   // object-fit: fill;
+    background-repeat: no-repeat;
 
   }
 
@@ -98,7 +100,7 @@
     h1, h2, .wd {
       margin-bottom: 10px;
     }
-    img{
+    .img-home{
       max-width: 300px;
      // display: none;
     }

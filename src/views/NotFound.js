@@ -7,7 +7,7 @@ export default class NotFound extends Component {
         return (
             <main>
                 <Mouse />
-                <div className="notfound">
+                <div className="notfound" role="main">
                     <Navtest />
                     <h1 className="text-center mt-4 ">Erreur 404:</h1>
                     <h2 className="text-center"> La page n'existe pas.</h2>

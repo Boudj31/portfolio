@@ -26,7 +26,7 @@ const Navtest =() => {
         return (
             <ThemeProvider theme={themeMode}>
             <GlobalStyles />
-            <nav className="header">
+            <nav className="header" role="navigation">
                 <div className="logo-nav">
                     <div className="mr-2 toogle">
                         <Toggle theme={theme} toggleTheme={themeToggler} />
@@ -61,7 +61,7 @@ const Navtest =() => {
                     </ul>
                 </div>
 
-                <div className="mobile-menu" onClick={handleClick}>
+                <div className="mobile-menu" onClick={handleClick} aria-expanded={"true"}>
                     {click ? (
                         <CloseMenu className="menu-icon" />
                     ) : (

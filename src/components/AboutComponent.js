@@ -22,7 +22,8 @@ const AboutComponent = () => {
                                 whileTap={{ scale: 0.9 }}
                                 className="big-box mb-5">
                                 <h3 className="text-center">Qui suis je ?</h3>
-                                <p>Je m’appelle Rachid Boudjenane, développeur web fullstack et web designer Après plusieurs formation autour du Développement Web et mobile et plusieurs expériences professionnelles que je vous laisse consulter sur mon portfolio. <br/>
+                                <p>Je m’appelle Rachid Boudjenane, développeur web fullstack et web designer Après plusieurs formation autour du Développement Web et mobile et plusieurs expériences professionnelles que je vous laisse consulter sur mon portfolio avec les
+                                    <NavLink to="/legal"> Mentions légales</NavLink>. <br/>
 
                                     Je suis maintenant à la recherche de nouvelles opportunités dans le Web avec les technologies <span>PHP</span>, <span>Symfony</span>, <span>VueJS</span>, <span>ReactJS</span> ou dans l’applicatif avec IOS et la technologie <span>Swift</span>. <br/>
 

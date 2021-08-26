@@ -72,8 +72,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.text};
   }
 
-  .home img {
+  .home .img-home {
   //  filter: drop-shadow(0 0 1.2rem ${({theme}) => theme.text});
+     background-image: url(${({theme}) => theme.img});
 
   }
 

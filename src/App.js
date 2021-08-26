@@ -6,8 +6,8 @@ import Contact from "./views/Contact";
 import About from "./views/About";
 import Projects from "./views/Projects";
 import Skills from "./views/Skills";
-
 import { AnimatePresence } from 'framer-motion';
+import Legal from "./views/Legal";
 
 function App() {
 
@@ -73,6 +73,7 @@ function App() {
             <Route path="/projets" component={Projects} />
             <Route path="/skills" component={Skills} />
             <Route path="/contact" component={Contact} />
+            <Route path="/legal" component={Legal} />
             <Route path="*" component={NotFound} />
             </Switch>
         </AnimatePresence>

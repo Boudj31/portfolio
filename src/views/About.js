@@ -9,7 +9,7 @@ export default function About() {
         <>
             <Mouse />
             <Navtest />
-            <div className="container mt-3">
+            <div className="container mt-3" role="main">
                 <AboutComponent />
                 <ScrollButtons right={"/contact"} left={"/skills"}/>
             </div>

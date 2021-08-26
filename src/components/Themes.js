@@ -9,6 +9,7 @@ export const lightTheme = {
     // home page
     homeH2: '',
     homeWd: '',
+    img: 'img/mac.svg',
 
     //contact
 
@@ -35,6 +36,7 @@ export const darkTheme = {
     // home page
     homeH2: '',
     homeWd: '',
+    img: 'img/macl.svg',
 
     // contact
     contactpage: 'dark',

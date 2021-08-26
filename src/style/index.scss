@@ -9,6 +9,7 @@
 @import "views/projects";
 @import "views/skills";
 @import "components/scroll";
+@import "views/legal";
 
 
 
@@ -28,10 +29,7 @@
 html {
   scroll-behavior: unset;
 }
-a,
-a:visited {
-  color: white;
-}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $color1;

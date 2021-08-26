@@ -112,7 +112,7 @@ export default function Skills() {
 
             <Mouse />
             <Navtest />
-            <div className=" container main-sk mt-3">
+            <div className=" container main-sk mt-3" role="main">
                 <div className="box-title">
                     <h2 className="text-center"> >Mes compétences à votre service</h2>
                 </div>

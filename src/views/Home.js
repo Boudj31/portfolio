@@ -11,8 +11,8 @@ export default function Home() {
         <Fragment>
             <Mouse />
             <Navtest />
-            <div className="home container">
-                <div className="row">
+            <div className="home container-fluid" role="main">
+                <div className="row justify-content-center">
                     <div className="col-lg-5 col-sm-12 text-home">
                         <h1>I AM <br/>BOUDJENANE <span>
                             Rachid
@@ -34,7 +34,8 @@ export default function Home() {
                         <motion.div
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}className="col-lg-5 img-home">
-                            <img src="img/mac.svg" alt="mac"/>
+                            <div className="mac">
+                            </div>
                         </motion.div>
 
                 </div>
