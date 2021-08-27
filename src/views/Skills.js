@@ -106,13 +106,35 @@ export default function Skills() {
 
 
     ];
+        const variants = {
+            initial: {
+                opacity: 0.4,
+                transition: { duration: 0.3 },
+                x: 700,
+            },
+            visible: {
+                opacity: 1,
+                x: 0,
+            },
+            exit: {
+                opacity: 0.4,
+                transition: { duration: 0.3 },
+                x: -700,
+            }
+        };
 
     return (
         <>
 
             <Mouse />
             <Navtest />
-            <div className=" container main-sk mt-3" role="main">
+            <motion.div
+                initial="initial"
+                animate="visible"
+                exit="exit"
+                variants={variants}
+                className="container main-sk mt-3"
+                 role="main">
                 <div className="box-title">
                     <h2 className="text-center"> Mes compétences à votre service</h2>
                 </div>
@@ -122,7 +144,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2"> Dévelopement</h4>
+                            <h4 className="text-center p-2"> Dévelopemment</h4>
                         </div>
                         <SkillsData datas={skills} />
                     </motion.div>
@@ -131,7 +153,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-sm-6 col-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2"> Design  </h4>
+                            <h4 className="text-center p-2"> Design Web </h4>
                         </div>
                         <SkillsData datas={design} />
                     </motion.div>
@@ -146,7 +168,7 @@ export default function Skills() {
                     </motion.div>
                 </div>
                 <ScrollButtons right={"/about"} left={"/projets"}/>
-            </div>
+            </motion.div>
         </>
     );
 

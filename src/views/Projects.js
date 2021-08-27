@@ -3,6 +3,7 @@ import Mouse from "../components/Mouse";
 import Project from "../components/Project";
 import Navtest from "../components/Navtest";
 import ScrollButtons from "../components/ScrollButtons";
+import {motion} from "framer-motion";
 
 export default function Projects() {
     const projectsData = [
@@ -68,18 +69,41 @@ export default function Projects() {
             link: "http://www.nitehop.fr",
         },
     ];
+    const variants = {
+        initial: {
+            opacity: 0.4,
+            transition: { duration: 0.3 },
+            x: 700,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+        },
+        exit: {
+            opacity: 0.4,
+            transition: { duration: 0.3 },
+            x: -700,
+        }
+    };
+
     return (
         <>
             <Mouse />
             <Navtest />
-            <div className="container-lg" role="main">
+            <motion.div
+                initial="initial"
+                animate="visible"
+                exit="exit"
+                variants={variants}
+                className="container-lg"
+                role="main">
                 <div className="row mb-3 justify-content-center align-baseline box-title">
                     <h2 className="text-center"> Découvrez mes Réalisations</h2>
                 </div>
                 <div className="text-center">
                   <Project projets={projectsData}/>
                 </div>
-            </div>
+            </motion.div>
             <ScrollButtons right={"/skills"} left={"/"}/>
         </>
     );

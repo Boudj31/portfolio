@@ -140,8 +140,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .box-name {
-      background: ${({theme}) => theme.btnsk};
-      border: 2px solid ${({theme}) => theme.text};
+     // background: ${({theme}) => theme.btnsk};
+      color: ${({theme}) => theme.after};
+      border-bottom: 1px solid ${({theme}) => theme.after};
     }
     .box-title{
       background: ${({theme}) => theme.contactpage};;

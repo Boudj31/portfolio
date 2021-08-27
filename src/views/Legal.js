@@ -6,12 +6,34 @@ import {NavLink} from "react-router-dom";
 
 export default class Legal extends Component {
     render() {
+        const variants = {
+            initial: {
+                opacity: 0.4,
+                transition: { duration: 0.3 },
+                x: 700,
+            },
+            visible: {
+                opacity: 1,
+                x: 0,
+            },
+            exit: {
+                opacity: 0.4,
+                transition: { duration: 0.3 },
+                x: -700,
+            }
+        };
         return (
             <main>
                 <Mouse />
-                <div className="legal" role="main">
+                <motion.div
+                    initial="initial"
+                    animate="visible"
+                    exit="exit"
+                    variants={variants}
+                    className="legal"
+                    role="main">
                     <Navtest />
-                    <div className="container-fluid">
+                    <motion.div className="container-fluid">
                                 <motion.div
                                     className="big-box mb-3">
                                     <h2 className="text-center">Mentions légales</h2>
@@ -31,8 +53,8 @@ export default class Legal extends Component {
                                     <p>Des espaces interactifs (espace contact ou commentaires) sont à la disposition des utilisateurs. <strong>BOUDJENANE Rachid</strong> se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. </p>
                                     <p>Le cas échéant, <strong>BOUDJENANE Rachid</strong> se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).</p>
                                 </motion.div>
-                            </div>
-                </div>
+                            </motion.div>
+                </motion.div>
             </main>
         )
     }

@@ -11,7 +11,6 @@ import Legal from "./views/Legal";
 
 function App() {
 
-    //scroll
     const location = useLocation();
     let history = useHistory();
 
@@ -24,11 +23,11 @@ function App() {
                 if (e.wheelDeltaY < 0) {
                     setTimeout(() => {
                         history.push(after);
-                    }, 800);
+                    }, 2500);
                 } else if (e.wheelDeltaY > 0) {
                     setTimeout(() => {
                         history.push(before);
-                    }, 800);
+                    }, 2500);
                 }
             };
 
@@ -37,7 +36,7 @@ function App() {
                     if (e.wheelDeltaY < 0) {
                         setTimeout(() => {
                             history.push("projets");
-                        }, 500);
+                        }, 2500);
                     }
                     break;
                 case url + "projets":
@@ -53,7 +52,7 @@ function App() {
                     if (e.wheelDeltaY > 0) {
                         setTimeout(() => {
                             history.push("about");
-                        }, 800);
+                        }, 2500);
                     }
                     break;
                 default:
@@ -63,11 +62,10 @@ function App() {
         window.addEventListener("wheel", handleScrollToElement);
     }, [history]);
 
-
     return (
 
         <AnimatePresence>
-          <Switch>
+            <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/projets" component={Projects} />

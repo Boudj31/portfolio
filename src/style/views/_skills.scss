@@ -56,9 +56,11 @@
   }
 
   .box-name {
-    border-radius: 32px;
-    background-image: linear-gradient(to bottom, #010a1e, #0e4478, #b1daf8, #dff2ff);  //background-color: $color1;
-    border: 1px solid #fff;
+    margin-top: 10px;
+    font-weight: bold;
+  //  border-radius: 32px;
+  //  background-image: linear-gradient(to bottom, #010a1e, #0e4478, #b1daf8, #dff2ff);  //background-color: $color1;
+    border-bottom: 1px solid $color3;
   }
   img {
     object-fit: contain;

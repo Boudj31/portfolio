@@ -7,11 +7,34 @@ import DynamicText from "../components/DynamicText";
 
 
 export default function Home() {
+    const variants = {
+        initial: {
+            opacity: 0.4,
+            transition: { duration: 0.3 },
+            x: 700,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+        },
+        exit: {
+            opacity: 0.4,
+            transition: { duration: 0.3 },
+            x: -700,
+        }
+    };
+
     return (
         <Fragment>
             <Mouse />
             <Navtest />
-            <div className="home container-fluid" role="main">
+            <motion.div
+                initial="initial"
+                animate="visible"
+                exit="exit"
+                variants={variants}
+                className="home container-fluid"
+                role="main">
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-sm-12 text-home">
                         <h1>I AM <br/>BOUDJENANE <span>
@@ -38,7 +61,7 @@ export default function Home() {
 
                 </div>
 
-            </div>
+            </motion.div>
             <ScrollButtons right={"/projets"}/>
 
         </Fragment>
