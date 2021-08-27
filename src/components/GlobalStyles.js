@@ -5,7 +5,17 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme.text};
     transition: all 0.50s linear;
   }
+  // not found
+  .notfound h1 {
+    color: ${({theme}) => theme.after};
+  }
+  // legal 
   
+  .legal .big-box {
+    background: ${({theme}) => theme.contactpage};;
+    color: ${({theme}) => theme.text};
+  }
+
   // mouse
 
   .cursor {
@@ -70,6 +80,7 @@ export const GlobalStyles = createGlobalStyle`
   .home .btn {
     background-image: ${({theme}) => theme.btnsk};
     color: ${({theme}) => theme.text};
+    border: 2px solid ${({theme}) => theme.text};
   }
 
   .home .img-home {
@@ -130,6 +141,7 @@ export const GlobalStyles = createGlobalStyle`
 
     .box-name {
       background: ${({theme}) => theme.btnsk};
+      border: 2px solid ${({theme}) => theme.text};
     }
     .box-title{
       background: ${({theme}) => theme.contactpage};;

@@ -25,7 +25,7 @@ const AboutComponent = () => {
                                 <p>Je m’appelle Rachid Boudjenane, développeur web fullstack et web designer Après plusieurs formation autour du Développement Web et mobile et plusieurs expériences professionnelles que je vous laisse consulter sur mon portfolio avec les
                                     <NavLink to="/legal"> Mentions légales</NavLink>. <br/>
 
-                                    Je suis maintenant à la recherche de nouvelles opportunités dans le Web avec les technologies <span>PHP</span>, <span>Symfony</span>, <span>VueJS</span>, <span>ReactJS</span> ou dans l’applicatif avec IOS et la technologie <span>Swift</span>. <br/>
+                                    Je suis maintenant à la recherche de nouvelles opportunités dans le Web design ou le Web avec les technologies <span>PHP</span>, <span>Symfony</span>, <span>VueJS</span>, <span>ReactJS</span> ou dans l’applicatif avec IOS et la technologie <span>Swift</span>. <br/>
 
                                     En parallèle, je continue à m’intéresser à d’autres technologies tels que <span>Python</span>, <span>React Native</span>.
                                     Ces brèves lignes pour vous dire que l’on métier me passionne ! <br/>

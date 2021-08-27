@@ -74,9 +74,11 @@ export default function Projects() {
             <Navtest />
             <div className="container-lg" role="main">
                 <div className="row mb-3 justify-content-center align-baseline box-title">
-                    <h2 className="text-center"> >Découvrez mes Réalisations</h2>
+                    <h2 className="text-center"> Découvrez mes Réalisations</h2>
                 </div>
-                <Project projets={projectsData}/>
+                <div className="text-center">
+                  <Project projets={projectsData}/>
+                </div>
             </div>
             <ScrollButtons right={"/skills"} left={"/"}/>
         </>

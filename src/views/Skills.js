@@ -114,7 +114,7 @@ export default function Skills() {
             <Navtest />
             <div className=" container main-sk mt-3" role="main">
                 <div className="box-title">
-                    <h2 className="text-center"> >Mes compétences à votre service</h2>
+                    <h2 className="text-center"> Mes compétences à votre service</h2>
                 </div>
                 <div className="row justify-content-between">
                     <motion.div
@@ -122,7 +122,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2"> >Dévelopement</h4>
+                            <h4 className="text-center p-2"> Dévelopement</h4>
                         </div>
                         <SkillsData datas={skills} />
                     </motion.div>
@@ -131,7 +131,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-sm-6 col-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2"> >Design  </h4>
+                            <h4 className="text-center p-2"> Design  </h4>
                         </div>
                         <SkillsData datas={design} />
                     </motion.div>
@@ -140,7 +140,7 @@ export default function Skills() {
                         whileTap={{ scale: 0.9 }}
                         className="col-lg-3 col-md-6 col-sm-7 skills-box justify-content-center">
                         <div className="box-name">
-                            <h4 className="text-center p-2"> >Softs Skills </h4>
+                            <h4 className="text-center p-2"> Softs Skills </h4>
                         </div>
                         <SkillsData datas={soft} />
                     </motion.div>
