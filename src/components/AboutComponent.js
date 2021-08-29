@@ -86,7 +86,7 @@ const AboutComponent = () => {
                                    whileHover={{ scale: 1.1 }}
                                    whileTap={{ scale: 0.9 }}
                                    className="small-box col-lg-3 col-md-12">
-                                   <h5 className="text-center">Centre d'intérét</h5>
+                                   <h5 className="text-center">Passions</h5>
                                    <ul>
                                        <li>
                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"

@@ -23,11 +23,11 @@ function App() {
                 if (e.wheelDeltaY < 0) {
                     setTimeout(() => {
                         history.push(after);
-                    }, 2500);
+                    }, 2000);
                 } else if (e.wheelDeltaY > 0) {
                     setTimeout(() => {
                         history.push(before);
-                    }, 2500);
+                    }, 2000);
                 }
             };
 
@@ -36,7 +36,7 @@ function App() {
                     if (e.wheelDeltaY < 0) {
                         setTimeout(() => {
                             history.push("projets");
-                        }, 2500);
+                        }, 2000);
                     }
                     break;
                 case url + "projets":
@@ -52,7 +52,7 @@ function App() {
                     if (e.wheelDeltaY > 0) {
                         setTimeout(() => {
                             history.push("about");
-                        }, 2500);
+                        }, 2000);
                     }
                     break;
                 default:

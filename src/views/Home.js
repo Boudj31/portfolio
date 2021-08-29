@@ -37,8 +37,8 @@ export default function Home() {
                 role="main">
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-sm-12 text-home">
-                        <h1>I AM <br/>BOUDJENANE <span>
-                            Rachid
+                        <h1 className="hi">Hi, I am <br/><span>
+                            RACHID
                         </span>
                         </h1>
                         <div className="dynamic-text">
