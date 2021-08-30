@@ -3,6 +3,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
+
+
     const [name, setName] = useState("");
     const [company, setCompany] = useState("");
     const [phone, setPhone] = useState("");

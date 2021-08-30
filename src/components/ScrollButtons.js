@@ -10,7 +10,7 @@ const ScrollButtons = (props) => {
                         <span>&#10092;</span>
                     </NavLink>
                 )}
-                <p className="center">Scrollez</p>
+                <p className="center"></p>
                 {props.right && (
                     <NavLink to={props.right} className="right hover">
                         <span>&#10093;</span>
