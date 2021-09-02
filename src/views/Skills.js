@@ -106,22 +106,22 @@ export default function Skills() {
 
 
     ];
-        const variants = {
-            initial: {
-                opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: 700,
-            },
-            visible: {
-                opacity: 1,
-                x: 0,
-            },
-            exit: {
-                opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: -700,
-            }
-        };
+    const variants = {
+        initial: {
+            opacity: 0.4,
+            transition: { ease: [.03,.87,.73,.9], },
+            x: 500,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+        },
+        exit: {
+            opacity: 0.4,
+            transition: { ease: [.03,.87,.73,.9], },
+            x: -500,
+        }
+    };
 
     return (
         <>

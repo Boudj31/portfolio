@@ -2,15 +2,14 @@ import React, { Component } from 'react'
 import Mouse from '../components/Mouse'
 import Navtest from "../components/Navtest";
 import {motion} from "framer-motion";
-import {NavLink} from "react-router-dom";
 
 export default class Legal extends Component {
     render() {
         const variants = {
             initial: {
                 opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: 700,
+                transition: { duration: 2.9 },
+                x: 500,
             },
             visible: {
                 opacity: 1,
@@ -18,8 +17,8 @@ export default class Legal extends Component {
             },
             exit: {
                 opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: -700,
+                transition: { duration: 2.9 },
+                x: -500,
             }
         };
         return (

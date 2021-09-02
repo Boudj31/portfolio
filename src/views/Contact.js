@@ -11,8 +11,8 @@ export default class Contact extends Component {
         const variants = {
             initial: {
                 opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: 700,
+                transition: { duration: 2.9 },
+                x: 500,
             },
             visible: {
                 opacity: 1,
@@ -20,10 +20,11 @@ export default class Contact extends Component {
             },
             exit: {
                 opacity: 0.4,
-                transition: { duration: 0.3 },
-                x: -700,
+                transition: { duration: 2.9 },
+                x: -500,
             }
         };
+
         return (
             <>
                 <main role="main">

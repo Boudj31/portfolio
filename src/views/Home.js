@@ -10,8 +10,8 @@ export default function Home() {
     const variants = {
         initial: {
             opacity: 0.4,
-            transition: { duration: 0.3 },
-            x: 700,
+            transition: { duration: 2.9 },
+            x: 500,
         },
         visible: {
             opacity: 1,
@@ -19,8 +19,8 @@ export default function Home() {
         },
         exit: {
             opacity: 0.4,
-            transition: { duration: 0.3 },
-            x: -700,
+            transition: { duration: 2.9 },
+            x: -500,
         }
     };
 

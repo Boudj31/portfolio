@@ -22,15 +22,12 @@ const AboutComponent = () => {
                                 whileTap={{ scale: 0.9 }}
                                 className="big-box mb-5">
                                 <h3 className="text-center">Qui suis je ?</h3>
-                                <p>Je m’appelle Rachid Boudjenane, développeur web fullstack et web designer Après plusieurs formation autour du Développement Web et mobile et plusieurs expériences professionnelles que je vous laisse consulter sur mon portfolio avec les
-                                    <NavLink to="/legal"> Mentions légales</NavLink>. <br/>
+                                <p>Je m’appelle Rachid Boudjenane, développeur web fullstack et web designer freelance, après plusieurs formations autour du Développement Web et mobile et plusieurs expériences professionnelles qui sont consultable sur mon portfolio et mon CV. <br/>
+                                   Les <NavLink to="/legal"><span>Mentions légales</span></NavLink> sont consultables ici. <br/>
 
                                     Je suis maintenant à la recherche de nouvelles opportunités dans le Web design ou le Web avec les technologies <span>PHP</span>, <span>Symfony</span>, <span>VueJS</span>, <span>ReactJS</span> ou dans l’applicatif avec IOS et la technologie <span>Swift</span>. <br/>
-
-                                    En parallèle, je continue à m’intéresser à d’autres technologies tels que <span>Python</span>, <span>React Native</span>.
-                                    Ces brèves lignes pour vous dire que l’on métier me passionne ! <br/>
-
-                                    Intéressé par mon profil ? Envie d’échanger sur le métier ? Laissez moi un mail dans la rubrique <NavLink to="/contact">
+                                    Idéalement dans une start-up ou une ESN ou bien en mission indépendante. <br/>
+                                    Intéressé par mon profil ? Envie d’échanger sur le métier ? Laissez moi un message dans la rubrique <NavLink to="/contact">
                                         contact
                                     </NavLink>.</p>
                             </motion.div>

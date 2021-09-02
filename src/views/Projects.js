@@ -68,12 +68,62 @@ export default function Projects() {
             img: "./img/projet/nite.png",
             link: "http://www.nitehop.fr",
         },
+        {
+            id: 6,
+            title: "Maquette Svp-visio",
+            date: "Septembre 2021",
+            languages: ["Adode XD",'Illustrator'],
+            infos:
+                "Première idée de maquette",
+            img: "./img/projet/xdsvp.png",
+            link: "https://xd.adobe.com/view/38f0fc14-3702-4cba-9abf-dceb9e3482fb-6da3/",
+        },
+        {
+            id: 7,
+            title: "Screencast modèle boite css",
+            date: "Septembre 2019",
+            languages: ["Première Pro",'After Effect', 'Audition'],
+            infos:
+                "tuto sur les modèles de boite en CSS",
+            img: "./img/projet/css.png",
+            link: "https://vimeo.com/manage/videos/574024391",
+        },
+        {
+            id: 8,
+            title: "Introduction after",
+            date: "Septembre 2019",
+            languages: ['After Effect'],
+            infos:
+                "Animation en motion design",
+            img: "./img/projet/intro.png",
+            link: "https://vimeo.com/manage/videos/574028292",
+        },
+        {
+            id: 9,
+            title: "Illustration Mario",
+            date: "Septembre 2019",
+            languages: ['Illustrator'],
+            infos:
+                "Illustation svg",
+            img: "./img/projet/mario.png",
+            link: "http://www.nitehop.fr",
+        },
+        {
+            id: 10,
+            title: "Illustration Homme souriant",
+            date: "Septembre 2019",
+            languages: ['Illustrator'],
+            infos:
+                "Illustation svg",
+            img: "./img/projet/homme.png",
+            link: "http://www.nitehop.fr",
+        },
     ];
     const variants = {
         initial: {
             opacity: 0.4,
-            transition: { duration: 0.3 },
-            x: 700,
+            transition: { duration: 2.9 },
+            x: 500,
         },
         visible: {
             opacity: 1,
@@ -81,8 +131,8 @@ export default function Projects() {
         },
         exit: {
             opacity: 0.4,
-            transition: { duration: 0.3 },
-            x: -700,
+            transition: { duration: 2.9 },
+            x: -500,
         }
     };
 
