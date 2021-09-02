@@ -14,7 +14,7 @@ export default function Projects() {
             languages: ["Wordpress"],
             infos:
                 "Site Wordpress de screencasts ",
-            img: "./img/projet/svp.png",
+            img: "./img/projet/svpvisio.png",
             link: "http://www.svp-visio.fr",
         },
         {
@@ -100,23 +100,13 @@ export default function Projects() {
         },
         {
             id: 9,
-            title: "Illustration Mario",
+            title: "Illustration Mario et homme",
             date: "Septembre 2019",
             languages: ['Illustrator'],
             infos:
                 "Illustation svg",
             img: "./img/projet/mario.png",
-            link: "http://www.nitehop.fr",
-        },
-        {
-            id: 10,
-            title: "Illustration Homme souriant",
-            date: "Septembre 2019",
-            languages: ['Illustrator'],
-            infos:
-                "Illustation svg",
-            img: "./img/projet/homme.png",
-            link: "http://www.nitehop.fr",
+            link: "Télecharger ici",
         },
     ];
     const variants = {

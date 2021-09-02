@@ -8,6 +8,7 @@ import Projects from "./views/Projects";
 import Skills from "./views/Skills";
 import { AnimatePresence } from 'framer-motion';
 import Legal from "./views/Legal";
+import {Redirect} from "react-router";
 
 function App() {
 
@@ -72,7 +73,8 @@ function App() {
             <Route path="/skills" component={Skills} />
             <Route path="/contact" component={Contact} />
             <Route path="/legal" component={Legal} />
-            <Route path="*" component={NotFound} />
+             <Route path="/404" component={NotFound} />
+            <Redirect to="/404"/>
             </Switch>
         </AnimatePresence>
 
