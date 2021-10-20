@@ -15,7 +15,7 @@ export default function Projects() {
             infos:
                 "Site Wordpress de screencasts ",
             img: "./img/projet/svpvisio.png",
-            link: "http://www.svp-visio.fr",
+            link: "http://www.svp-visio.com",
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ export default function Projects() {
             infos:
                 "Site E-learning sur Symfony",
             img: "./img/projet/online.png",
-            link: "http://www.google.com",
+            link: "https://www.symfony-online.fr",
         },
 
         {
@@ -66,10 +66,30 @@ export default function Projects() {
             infos:
                 "Application IOS pour le monde de la nuit.",
             img: "./img/projet/nite.png",
-            link: "http://www.nitehop.fr",
+            link: "https://apps.apple.com/fr/app/nitehop/id1484707520",
         },
         {
             id: 6,
+            title: "Blog VueJs",
+            date: "Septembre 2021",
+            languages: ["VueJs",'Firebase'],
+            infos:
+               "Projet perso, initation à la technologie VueJS",
+            img: "./img/projet/blog.png",
+            link: "http://www.nitehop.fr",
+        },
+        {
+            id: 7,
+            title: "MovieAPP NuxtJS",
+            date: "Septembre 2021",
+            languages: ["VueJS", "NuxtJS"],
+            infos:
+                "Projet perso, initation à la technologie NuxtJS",
+            img: "./img/projet/movieapp.png",
+            link: "https://movie-nuxt.herokuapp.com/",
+        },
+        {
+            id: 8,
             title: "Maquette Svp-visio",
             date: "Septembre 2021",
             languages: ["Adode XD",'Illustrator'],
@@ -79,7 +99,7 @@ export default function Projects() {
             link: "https://xd.adobe.com/view/38f0fc14-3702-4cba-9abf-dceb9e3482fb-6da3/",
         },
         {
-            id: 7,
+            id: 9,
             title: "Screencast modèle boite css",
             date: "Septembre 2019",
             languages: ["Première Pro",'After Effect', 'Audition'],
@@ -88,26 +108,7 @@ export default function Projects() {
             img: "./img/projet/css.png",
             link: "https://vimeo.com/manage/videos/574024391",
         },
-        {
-            id: 8,
-            title: "Introduction after",
-            date: "Septembre 2019",
-            languages: ['After Effect'],
-            infos:
-                "Animation en motion design",
-            img: "./img/projet/intro.png",
-            link: "https://vimeo.com/manage/videos/574028292",
-        },
-        {
-            id: 9,
-            title: "Illustration Mario et homme",
-            date: "Septembre 2019",
-            languages: ['Illustrator'],
-            infos:
-                "Illustation svg",
-            img: "./img/projet/mario.png",
-            link: "Télecharger ici",
-        },
+        
     ];
     const variants = {
         initial: {
@@ -138,7 +139,7 @@ export default function Projects() {
                 className="container-lg"
                 role="main">
                 <div className="row mb-3 justify-content-center align-baseline box-title">
-                    <h2 className="text-center"> Découvrez mes Réalisations</h2>
+                    <h2 className="text-center"> Découvrer mes Réalisations</h2>
                 </div>
                 <div className="text-center">
                   <Project projets={projectsData}/>

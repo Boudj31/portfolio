@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-import { Carousel } from 'react-responsive-carousel';
-import {motion, AnimatePresence, AnimateSharedLayout} from "framer-motion";
+import {motion} from "framer-motion";
 
 export default function Project({ projets }) {
     return(

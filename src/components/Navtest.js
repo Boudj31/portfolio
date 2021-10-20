@@ -1,8 +1,7 @@
-import React, {Component, useState} from "react";
+import React, { useState} from "react";
 
 import { ReactComponent as CloseMenu } from "../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../assets/menu.svg";
-import { ReactComponent as Logo } from "../assets/logo.svg";
 import {ThemeProvider} from "styled-components";
 import {NavLink} from "react-router-dom";
 import Toggle from "./Toogler";
@@ -34,7 +33,7 @@ const Navtest =() => {
                     <ul className={click ? "nav-options active" : "nav-options"}>
                         <li className="option" onClick={closeMobileMenu}>
                             <NavLink to="/" exact className="hover " activeClassName="nav-active">
-                               Home
+                              Accueil
                             </NavLink>
                         </li>
                         <li className="option" onClick={closeMobileMenu}>
