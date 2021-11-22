@@ -94,7 +94,7 @@ export default function Projects() {
             date: "Novembre 2021",
             languages: ["VueJS"],
             infos:
-                "Première idée de maquette",
+                "Challenge Frontend Mentor site complet VueJS",
             img: "./img/projet/easy.png",
             link: "https://easybank31.netlify.app/",
         },
@@ -117,6 +117,26 @@ export default function Projects() {
                 "tuto sur les modèles de boite en CSS",
             img: "./img/projet/css.png",
             link: "https://vimeo.com/642009568",
+        },
+        {
+            id: 11,
+            title: "CryptoAPP",
+            date: "Septembre 2021",
+            languages: ["HTML/CSS"],
+            infos:
+                "Integration maquette en HTML/CSS",
+            img: "./img/projet/crypto.png",
+            link: "https://cryptopage31.netlify.app/",
+        },
+        {
+            id: 12,
+            title: "Pokedex Typescript",
+            date: "Septembre 2021",
+            languages: ["HTML/CSS",'Typescript'],
+            infos:
+                "Application Pokedex avec appel de données via API",
+            img: "./img/projet/pokedex.png",
+            link: "https://pokedextypescript31.netlify.app/",
         },
         
     ];
