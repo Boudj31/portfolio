@@ -20,9 +20,11 @@ const DynamicText = () => {
                 }
                 return e.index * 100;
             }}
+            /*
             onEnd={(type) => {
                 console.log(type);
             }}
+            */
         >
             {text}
         </TextyAnim>

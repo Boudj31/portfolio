@@ -92,7 +92,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form className="contact-form">
+        <div className="contact-form">
             <h2>Contactez-moi</h2>
             <form className="form-content">
                 <input
@@ -153,7 +153,7 @@ const ContactForm = () => {
             />
 
             <div className="form-message"></div>
-        </form>
+        </div>
     );
 };
 

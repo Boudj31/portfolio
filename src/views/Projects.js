@@ -25,7 +25,7 @@ export default function Projects() {
             infos:
                 "Progiciel de gestion de stock.",
             img: "./img/projet/naga.png",
-            link: "http://www.nagastock.com",
+            link: "https://github.com/Boudj31/naga-stoock",
         },
         {
             id: 3,
@@ -35,7 +35,7 @@ export default function Projects() {
             infos:
                 "Site d'annonces pour la gestion de déchets.",
             img: "./img/projet/wasted.png",
-            link: "http://www.nagastock.fr",
+            link: "https://nagamad.netlify.app/",
         },
         {
             id: 4,
@@ -56,7 +56,7 @@ export default function Projects() {
             infos:
                 "Portfolio de Boudjenane Rachid",
             img: "./img/projet/port.png",
-            link: "http://www.rachidboudjenane.fr",
+            link: "www.boudjenanerachid.fr",
         },
         {
             id: 5,
@@ -76,7 +76,7 @@ export default function Projects() {
             infos:
                "Projet perso, initation à la technologie VueJS",
             img: "./img/projet/blog.png",
-            link: "http://www.nitehop.fr",
+            link: "https://github.com/Boudj31/BlogBdj",
         },
         {
             id: 7,
@@ -90,6 +90,16 @@ export default function Projects() {
         },
         {
             id: 8,
+            title: "EasyBank",
+            date: "Novembre 2021",
+            languages: ["VueJS"],
+            infos:
+                "Première idée de maquette",
+            img: "./img/projet/easy.png",
+            link: "https://easybank31.netlify.app/",
+        },
+        {
+            id: 9,
             title: "Maquette Svp-visio",
             date: "Septembre 2021",
             languages: ["Adode XD",'Illustrator'],
@@ -99,14 +109,14 @@ export default function Projects() {
             link: "https://xd.adobe.com/view/38f0fc14-3702-4cba-9abf-dceb9e3482fb-6da3/",
         },
         {
-            id: 9,
+            id: 10,
             title: "Screencast modèle boite css",
             date: "Septembre 2019",
             languages: ["Première Pro",'After Effect', 'Audition'],
             infos:
                 "tuto sur les modèles de boite en CSS",
             img: "./img/projet/css.png",
-            link: "https://vimeo.com/manage/videos/574024391",
+            link: "https://vimeo.com/642009568",
         },
         
     ];

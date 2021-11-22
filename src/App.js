@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import {Switch, Route, useLocation, useHistory} from "react-router-dom";
+import React from "react";
+import {Switch, Route} from "react-router-dom";
 import NotFound from "./views/NotFound";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
@@ -12,6 +12,7 @@ import {Redirect} from "react-router";
 
 function App() {
 
+    /*
     const location = useLocation();
     let history = useHistory();
 
@@ -62,6 +63,7 @@ function App() {
         };
         window.addEventListener("wheel", handleScrollToElement);
     }, [history]);
+    */
 
     return (
 
